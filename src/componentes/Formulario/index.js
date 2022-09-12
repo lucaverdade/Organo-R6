@@ -4,18 +4,9 @@ import CampoTexto from '../CampoTexto'
 import ListaSuspensa from '../ListaSuspensa'
 import './Formulario.css'
 
-const Formulario = () => { 
+const Formulario = (props) => { 
 
-    const times = [
-        'Luca',
-        'Leo',
-        'Osma',
-        'Jorge',
-        'Éder',
-        'Abud',
-        'Vini',
-        '-'
-    ]
+    
 
     const [nome, setNome] = useState ('')
     const [cargo, setCargo] = useState ('')
@@ -24,7 +15,16 @@ const Formulario = () => {
 
     const aoSalvar = (evento) => {
         evento.preventDefault()
-        console.log('Form foi submetido')
+        props.aoOperadorCadastrado({
+            nome,
+            cargo,
+            imagem,
+            time
+        })
+        setNome('')
+        setCargo('')
+        setImagem('')
+        setTime('')
     }
     return (
         <section className="formulario">
@@ -47,7 +47,8 @@ const Formulario = () => {
                   aoAlterado={valor => setImagem(valor)}
                 />
                 <ListaSuspensa obrigatorio={true}
-                label="Player"itens={times}
+                label="Player"
+                itens={props.Player}
                 valor={time}
                 aoAlterado={valor => setTime(valor)}
                 />
@@ -59,4 +60,4 @@ const Formulario = () => {
     )
 }
 
-export default Formulario
+export default Formulario 
