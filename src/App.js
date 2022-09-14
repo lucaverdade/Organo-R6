@@ -9,13 +9,13 @@ function App() {
   const times = [
     {
       nome: 'Luca',
-      corPrimaria: '#0000FF',
-      corSecundaria: '#F5FFFA'
+      corPrimaria: '#ccdbed',
+      corSecundaria: '#ebe2ed'
     }, 
     {
       nome: 'Leo',
-      corPrimaria: '#B22222',
-      corSecundaria: '#000000'
+      corPrimaria: '#717978',
+      corSecundaria: '#e2e2e2'
     }, 
     {
       nome: 'Osma',
@@ -29,18 +29,18 @@ function App() {
     }, 
     {
       nome: 'Eder',
-      corPrimaria: '#1C1C1C',
-      corSecundaria: '#F8F8FF'
+      corPrimaria: '#145a8d',
+      corSecundaria: '#209ad9'
     }, 
     {
       nome: 'Vini',
-      corPrimaria: '#A52A2A',
-      corSecundaria: '#006400'
+      corPrimaria: '#6465c8',
+      corSecundaria: '#cd8ffa'
     }, 
     {
       nome: 'Abud',
-      corPrimaria: '#1C1C1C',
-      corSecundaria: '#F8F8FF'
+      corPrimaria: '#3b5c82',
+      corSecundaria: '#161c31'
     }
   ]
 
